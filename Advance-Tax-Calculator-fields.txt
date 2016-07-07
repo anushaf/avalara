@@ -1,0 +1,152 @@
+ORIGIN
+
+Location Code:	Fill/Select
+Address 1:
+Address 2:
+Address3:
+City:
+State/Province:
+ZIP/Postal Code:
+Country:
+Latitude:
+Longitude:
+
+Destination :
+
+Location Code: Fill/Select
+Address 1:
+Address 2:
+Address3:
+City:
+State/Province:
+ZIP/Postal Code:
+Country:
+Latitude:
+Longitude:
+
+
+DOCUMENT
+
+Customer/Vendor Code
+Definition:	The accounting, ERP, e-commerce, m-commerce, or POS application's code to uniquely identify a customer or vendor.
+Example:	Cust-001
+Required:	Yes
+Limitations:	50 characters
+
+Document Date
+Definition:	The date the transactionHoverTT.png occurred, which is used for both the tax calculation date and for reporting purposes.
+Example:	10/23/2010
+Required:	Yes
+Limitations:	Defaults to today's date in MM/DD/YY format.
+
+Document Type
+Definition:	The type of transactionHoverTT.png the document represents.
+Example:	Select one of the following options:
+Sales Order
+Purchase Order
+Required:	Optional
+
+Discount
+Definition:	The document-level discount that you want applied.
+Example:	30.00
+Required:	Optional
+Limitations:	Defaults to 0.
+
+Currency
+Definition:	The currency used in the transactionHoverTT.png.
+Example:	Canadian Dollar (CAD)
+Required:	Optional
+Limitations:	Defaults to US Dollar (USD)
+
+Exemption No
+Definition:	The exemption certificateHoverTT.png number for your customer.
+Example:	Can be the customer code from the exemptions screen, or any exemption number.
+Required:	Optional
+
+Buyer's VAT No
+Definition:	The value-added tax number of the buyer.
+Example:	87654321
+Required:	Optional
+Limitations:	25 alphanumeric characters
+
+Reference Code
+Definition:	A user-defined field for reference purposes only. It can refer to a corresponding document number in an accounting, ERP, e-commerce, m-commerce, or POS application.
+Example:	When processing a return, the reference code can hold the corresponding invoice number.
+Required:	Optional
+
+Entity Use Code
+Definition:	An identifier used to group like customers for exemption purposes. It is a custom value that links customers to a tax ruleHoverTT.png. Select standard codes or enter a custom code.
+Example:	Federal Government
+Required:	Optional
+
+Purchase Order No
+Definition:	The purchase order number assigned by the accounting, ERP, e-commerce, m-commerce, or POS application.
+Example:	87654321
+Required:	Optional
+
+Salesperson Code
+Definition:	The salesperson identifier assigned by the accounting, ERP, e-commerce, m-commerce, or POS application.
+Example:	87654321
+Required:	Optional
+
+LINES
+
+Line No
+Definition:	A unique identifier for the line on the document. Line numbers are normally assigned sequentially beginning at 1.
+Example:	12
+Required:	Yes
+
+Item
+Definition:	The code or SKU used to identify the product, service, or charge.
+Example:	Item-001
+Required:	Optional
+
+Item Description
+Definition:	A brief description of the product, service, or charge.
+Example:	Sweaters
+Required:	Optional
+Limitations:	Both Item Code and Item Description are required to accurately tax SST transactions. TransactionsHoverTT.png without these are taxed by default.
+
+Entity Use Code
+Definition: An identifier used to group like customers for exemption purposes. It is a custom value that links customers to a tax ruleHoverTT.png. Select standard codes or enter a custom code.
+Example:	Federal Government
+Required:	Optional
+
+Tax Code
+Definition:	A unique label used to group items (products, services, or charges) by taxability.
+Example:	PC040100
+Required:	Optional
+Limitations:	If a tax code is not associated with the item, AvaTax assigns a default tax code of U0000000, indicating an unknown tax code.
+
+Exemption No
+Definition:	The exemption certificateHoverTT.png number for your customer.
+Example:	Can be the customer code from the exemptions screen, or any exemption number.
+Required:	Optional
+
+Quantity
+Definition:	The quantity of the items (products or services) you want to process.
+Example:	2
+Required:	Yes
+Limitations:	Calculates 0 if left blank.
+
+Amount
+Definition:	The price (quantity X unit price).
+Example:	43.21
+Required:	Yes
+Limitations:	Calculates 0 if left blank.
+
+Buyer's VAT No.
+Definition:	The value-added tax number of the buyer.
+Example:	87654321
+Required:	Optional
+Limitations:	25 alphanumeric characters
+
+Tax Included
+Definition:	Click to indicate that the line already includes the tax.
+Required:	Optional
+Limitations:	By default, tax included is not checked.
+
+Apply Discount
+Definition:	Click to apply the document-level discount to the selected line.
+Required:	Optional
+Limitations:	By default, Apply Discount is not checked.

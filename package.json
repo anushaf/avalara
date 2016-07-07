@@ -1,0 +1,18 @@
+{
+  "name": "avalara",
+  "version": "2.8.0",
+  "description": "A small library providing utility methods to calculate sales tax from Avalara Ava tax",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "avalara",
+    "avatax"
+  ],
+  "author": "sunny chauhan",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.72.0"
+  }
+}

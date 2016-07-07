@@ -1,0 +1,61 @@
+ORIGIN
+
+Location Code:	Fill/Select
+Address 1:
+Address 2:
+Address3:
+City:
+State/Province:
+ZIP/Postal Code:
+Country:
+Latitude:
+Longitude:
+
+Destination :
+
+Location Code: Fill/Select
+Address 1:
+Address 2:
+Address3:
+City:
+State/Province:
+ZIP/Postal Code:
+Country:
+Latitude:
+Longitude:
+
+Order Information
+
+Item Code
+Definition:	A unique identifier for the item (product, service, or charge)
+Example:	BTLD WTR.
+Required:	Yes
+Limitations:	50 alpha/numeric characters
+
+Item Description
+Definition:	A brief description of the product, service, or charge.
+Example:	Sweaters
+Required:	Optional
+Limitations:	To calculate tax on SST transactions, you are required to type the Item Code and Item Description. TransactionsHoverTT.png without these are taxed by default.
+
+Entity Use Code
+Definition:	An identifier used to group like customers for exemption purposes. It is a custom value that links customers to a tax rule. Select standard codes or enter a custom code.
+Example:	Federal Government
+Required:	Optional
+
+Tax Code
+Definition:	A unique label used to group items (products, services, or charges) by taxability.
+Example:	PC040100
+Required:	Optional
+Limitations:	If a tax code is not associated with the item, AvaTax assigns a default tax code of U0000000, indicating an unknown tax code.
+
+Amount
+Definition:	The price (quantity X unit price).
+Example:	43.21
+Required:	Yes
+Limitations:	Calculates 0 if left blank.
+
+Apply Discount
+Definition:	Click to apply the document-level discount to the selected line.
+Required:	Optional
+Limitations:	By default, Apply Discount is not checked.
