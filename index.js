@@ -9,7 +9,7 @@ function Avalara(accountNumber, licenseKey, options) {
      this.licenseKey = licenseKey;
      const basicAuth = "Basic " + new Buffer(this.accountNumber + ":" + this.licenseKey).toString("base64");
      options = options || {};
-     options.development = options.development || true;
+     options.development = options.development || false;
      options.version = options.version || currentAPIVersion;
      this.apiOptions = function() {
           const requestUrl = options.development ? 'https://development.avalara.net' : 'https://avatax.avalara.net';
